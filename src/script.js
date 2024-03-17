@@ -9,7 +9,7 @@ const API_ENDPOINT = "https://stoic-quotes.com/api/quote";
 console.log();
 
 async function getQuote() {
-  adviceNumber.textContent = "Finding some wise guy to say some deep shit...";
+  adviceNumber.textContent = "Some wise guy about to say some deep shit...";
   adviceBlockquote.innerHTML = "<p>Since you asked...<p/>";
   try {
     const response = await fetch(API_ENDPOINT);
