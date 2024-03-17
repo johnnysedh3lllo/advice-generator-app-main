@@ -99,7 +99,7 @@ body {
   font-weight: 500;
   color: hsl(150, 100%, 66%);
 }
-.advice-card__quote {
+.advice-card__blockquote {
   color: hsl(193, 38%, 86%);
   font-weight: 800;
   font-size: 1.45rem;
@@ -138,7 +138,7 @@ body {
   .advice-card__title {
     font-size: 0.9rem;
   }
-  .advice-card__quote {
+  .advice-card__blockquote {
     font-size: 1.75rem;
   }
   .advice-card__divider.mobile {

@@ -27,7 +27,7 @@ body {
     font-weight: 500;
     color: $clr-neon-green;
   }
-  &__quote {
+  &__blockquote {
     color: $clr-light-cyan;
     font-weight: $fw-primary;
     font-size: 1.45rem;
@@ -67,7 +67,7 @@ body {
     &__title {
       font-size: 0.9rem;
     }
-    &__quote {
+    &__blockquote {
       font-size: $fs-primary;
     }
     &__divider {
