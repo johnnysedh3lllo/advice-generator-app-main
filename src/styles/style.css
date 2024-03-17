@@ -121,7 +121,7 @@ body {
 .btn--generate {
   background-color: hsl(150, 100%, 66%);
   position: absolute;
-  bottom: -10%;
+  bottom: -31px;
   cursor: pointer;
   transition: box-shadow 0.25s;
 }
