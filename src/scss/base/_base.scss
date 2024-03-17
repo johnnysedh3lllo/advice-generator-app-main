@@ -1,0 +1,82 @@
+// * {
+//   outline: 1px solid yellow;
+// }
+body {
+  font-family: $ff-primary;
+  padding: 1rem;
+  background-color: $clr-dark-blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.advice-card {
+  background-color: $clr-dark-grayish-blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 1.5rem 4rem;
+  position: relative;
+  border-radius: 10px;
+  width: min(100%, 540px);
+  &__title {
+    text-transform: uppercase;
+    letter-spacing: 3.7px;
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: $clr-neon-green;
+  }
+  &__quote {
+    color: $clr-light-cyan;
+    font-weight: $fw-primary;
+    font-size: 1.45rem;
+    padding-block: 1.25rem 1rem;
+    line-height: 1.4;
+  }
+  &__divider {
+    padding-block-start: 1rem;
+    &.desktop {
+      display: none;
+    }
+  }
+}
+
+.btn {
+  padding: 1.25rem;
+  border-radius: 100px;
+  border: 0;
+
+  &--generate {
+    background-color: $clr-neon-green;
+    position: absolute;
+    bottom: -10%;
+    cursor: pointer;
+    transition: box-shadow 0.25s;
+    &:hover {
+      box-shadow: 0px 0px 58px 5px hsla(150, 100%, 66%, 0.65);
+      -webkit-box-shadow: 0px 0px 58px 5px hsla(150, 100%, 66%, 0.65);
+      -moz-box-shadow: 0px 0px 58px 5px hsla(150, 100%, 66%, 0.65);
+    }
+  }
+}
+
+@media (min-width: 769px) {
+  .advice-card {
+    padding: 3rem 2rem 5rem;
+    &__title {
+      font-size: 0.9rem;
+    }
+    &__quote {
+      font-size: $fs-primary;
+    }
+    &__divider {
+      &.mobile {
+        display: none;
+      }
+      &.desktop {
+        display: block;
+      }
+    }
+  }
+}

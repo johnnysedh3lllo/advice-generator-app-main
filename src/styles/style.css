@@ -1,0 +1,152 @@
+/* Box sizing, margin and padding rules*/
+*,
+*::before,
+*::after {
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+  outline-color: transparent;
+  margin: 0;
+  padding: 0;
+}
+
+*:focus-visible {
+  outline: 1px solid black;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+html {
+  scroll-padding-block-start: 5rem;
+}
+
+/* Set core root defaults */
+html,
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+/* Set core body defaults */
+body {
+  min-block-size: 100vh;
+  inline-size: 100%;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* prevents outline on pseudo classes on anchor links */
+a:focus,
+a:visited,
+a:active {
+  outline-color: transparent;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-inline-size: 100%;
+  block-size: auto;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons and prevent blue highlight box */
+input,
+button,
+textarea,
+select,
+a {
+  -webkit-tap-highlight-color: transparent;
+  font: inherit;
+  outline: transparent;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  padding: 1rem;
+  background-color: hsl(218, 23%, 16%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.advice-card {
+  background-color: hsl(217, 19%, 24%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 1.5rem 4rem;
+  position: relative;
+  border-radius: 10px;
+  width: min(100%, 540px);
+}
+.advice-card__title {
+  text-transform: uppercase;
+  letter-spacing: 3.7px;
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: hsl(150, 100%, 66%);
+}
+.advice-card__quote {
+  color: hsl(193, 38%, 86%);
+  font-weight: 800;
+  font-size: 1.45rem;
+  padding-block: 1.25rem 1rem;
+  line-height: 1.4;
+}
+.advice-card__divider {
+  padding-block-start: 1rem;
+}
+.advice-card__divider.desktop {
+  display: none;
+}
+
+.btn {
+  padding: 1.25rem;
+  border-radius: 100px;
+  border: 0;
+}
+.btn--generate {
+  background-color: hsl(150, 100%, 66%);
+  position: absolute;
+  bottom: -10%;
+  cursor: pointer;
+  transition: box-shadow 0.25s;
+}
+.btn--generate:hover {
+  box-shadow: 0px 0px 58px 5px hsla(150, 100%, 66%, 0.65);
+  -webkit-box-shadow: 0px 0px 58px 5px hsla(150, 100%, 66%, 0.65);
+  -moz-box-shadow: 0px 0px 58px 5px hsla(150, 100%, 66%, 0.65);
+}
+
+@media (min-width: 769px) {
+  .advice-card {
+    padding: 3rem 2rem 5rem;
+  }
+  .advice-card__title {
+    font-size: 0.9rem;
+  }
+  .advice-card__quote {
+    font-size: 1.75rem;
+  }
+  .advice-card__divider.mobile {
+    display: none;
+  }
+  .advice-card__divider.desktop {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
